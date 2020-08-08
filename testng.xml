@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OneSoilAppiumTest" configfailurepolicy="continue" verbose="2">
+    <test name="AndroidOneSoilAppiumTest">
+        <classes>
+            <class name="tk.mdogx.onesoil.appium.test.AuthorizationTest">
+                <parameter name = "os" value="android"/>
+            </class>
+        </classes>
+    </test>
+    <test  name="IOSOneSoilAppiumTest">
+        <parameter name = "os" value="ios"/>
+        <classes>
+            <class name="tk.mdogx.onesoil.appium.test.AuthorizationTest">
+            </class>
+        </classes>
+    </test>
+</suite>

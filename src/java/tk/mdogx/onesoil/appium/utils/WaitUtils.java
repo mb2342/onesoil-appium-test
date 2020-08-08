@@ -10,14 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class WaitUtils {
 
-    public final int explicitWaitDefault = PropertyUtils.getIntegerProperty("explicitWait", 10);
-
-    public void staticWait(final long millis) {
-        try {
-            TimeUnit.MILLISECONDS.sleep(millis);
-        } catch (final InterruptedException e) {
-        }
-    }
+    public final int explicitWaitDefault = PropertyUtils.getIntegerProperty("explicitWait", 30);
 
     public void waitForElementToBeClickable(final WebElement element, final WebDriver driver) {
         new WebDriverWait(driver, this.explicitWaitDefault)

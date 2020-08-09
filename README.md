@@ -9,5 +9,6 @@ Test appiun project for OneSoil
 - Added support for Android and iOS devices and emulators.
 
 ### TODO:
-- add parallel tests execution support
-- add logger support
+- change screen locators strategy from xpath to id (source code change is required).
+- add parallel tests execution support.
+- add logger support.
